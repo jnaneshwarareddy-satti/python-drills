@@ -1,1 +1,1 @@
-print(hi genai)
+print("hi genai")
