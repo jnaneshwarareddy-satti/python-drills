@@ -7,7 +7,7 @@ notebook = dict()
 
 for item in folder.iterdir():
     if item.is_file():
-        notebook[item] = format(item.stat().st_size / 1024, ".2f")
+        notebook[item.name] = format(item.stat().st_size / 1024, ".2f")
 
 sorted_notebook = dict(sorted(notebook.items(), key=lambda item: item[1]))
 
